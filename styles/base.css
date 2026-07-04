@@ -85,7 +85,7 @@ main {
     flex-direction: column;
 }
 
-.card h3 {
+.card h3, h2 {
     background-color: var(--blue);
     color: var(--white);
     text-align: center;
@@ -151,7 +151,6 @@ hr {
     margin: 0 1.5rem 1rem 0;
 }
 
-/* --- Resources Sidebar --- */
 .resources-card ul {
     list-style-type: disc;
     padding-left: 1.5rem;
@@ -167,7 +166,7 @@ hr {
     text-decoration: underline;
 }
 
-/* --- Footer Area --- */
+
 footer {
     background-color: var(--blue);
     color: var(--white);
