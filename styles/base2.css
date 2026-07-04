@@ -1,197 +1,73 @@
-/* --- Root Variables & Setup --- */
-:root {
-    --blue: rgb(29, 77, 114);
-    --dark-grey: #333333;
-    --light-grey: #f5f5f5;
-    --white: #ffffff;
-    --border-color: #cbd5e1;
-    --yellow-text: #eab308;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Udie Stephen Udie home page">
+    <meta name="author" content="Udie Stephen Udie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>WDD 131 - Dynamic Web Fundamentals - Udie Stephen Udie</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdate.js" defer></script>
+</head>
+<body>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<header>
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+    
+    <nav class="modern">
+        <a href="https://www.linkedin.com/in/udie-stephen-31713a289/">Linkedin</a>
+        <a href="https://byui.instructure.com/">I-Learn</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p35#p35">Scripture</a>
+        <a href="#">Final Project</a>
+    </nav>
+</header> 
 
-body {
-    font-family: 'Montserrat Alternates', sans-serif;
-    background-color: var(--light-grey);
-    color: var(--dark-grey);
-    line-height: 1.6;
-}
+<main>
+    <h1 class="user-title">Udie Stephen Udie</h1>
 
-/* --- Header & Navigation --- */
-header {
-    background-color: var(--blue);
-    text-align: center;
-    color: var(--white);
-}
+    <section class="card">
+        <h3>About Me</h3>
+        <div class="card-content">
+            <div class="bio-block">
+                <img class="selfie" src="images/profile.jpg" alt="My picture">
+                <p>My name is Udie Stephen Udie, Am an expert graphics designer and am from Nigeria and am currently Schooling at Brigham Young Uninversity-Idaho where i run my Bachelor Degree Program on Computer Programming. <br> <br>I Am an IT lover, i enjoy designing and coding,i work remotely and onsite and i am open to remote jobs, i love eating afang soup at night but bread and tea in the morning, i also hate being broke, hence i dont mind working hard to enable me not to beg anyone for money, in watch word is perseverance, i believe with it, the sky will be my starting point, i normally spend my leisure time watching good movie, am presently watching a seasonal movie called LUCIFA, when ever am tired i dont mind shotting my eyes for a quike rest, which is mostly at night. <br><br>
+                <strong>Educational Endeavors:</strong><br>
+                My commitment to education is evident in my numerous initiatives aimed at fostering creativity and critical thinking among students. I have taught courses at various institutions, sharing my expertise in both art and technology. my teaching philosophy emphasizes the importance of interdisciplinary learning, encouraging students to explore the connections between different fields of study.</p>
+            </div>
+            
+            <h3>Nigeria</h3>
+            <hr>
+            <div class="flag-block">
+                <img class="flag" src="images/flag.jpg" alt="Nigeria Flag">
+                <p>Nigeria, country located on the western coast of Africa. Nigeria has a diverse geography, with climates ranging from arid to humid equatorial. However, Nigeria’s most diverse feature is its people. Hundreds of languages are spoken in the country, including Yoruba, Igbo, Fula, Hausa, Edo, Ibibio, Tiv, and English. The country has abundant natural resources, notably large deposits of petroleum and natural gas.</p>
+            </div>
+        </div>
+    </section>
 
-header h1 {
-    font-size: 1.4rem;
-    padding: 1.5rem 0;
-    font-weight: 400;
-}
+    <section class="card resources-card">
+        <h3>Web Dev Resources</h3>
+        <div class="card-content">
+            <ul>
+                <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                <li><a href="https://picsum.photos" target="_blank">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </div>
+    </section>
+</main> 
 
-nav {
-    background-color: var(--dark-grey);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav a {
-    color: var(--white);
-    text-decoration: none;
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
-    width: 100%;
-    text-align: center;
-}
-
-nav a:hover {
-    background-color: rgba(255,255,255,0.1);
-    text-decoration: underline;
-}
-
-/* --- Main Content Layout --- */
-.user-title {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.user-title h2 {
-    font-size: 2.5rem;
-    color: #111;
-    font-weight: 500;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto p;
-    padding: 0 1rem 3rem 1rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1.5rem;
-}
-
-/* --- Card Styles --- */
-.card {
-    background-color: var(--white);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.card h3 {
-    background-color: var(--blue);
-    color: var(--white);
-    text-align: center;
-    padding: 0.75rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.card-content {
-    padding: 1.5rem;
-}
-
-/* --- Bio Block Formatting (Image side-by-side) --- */
-.bio-block {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-    margin-bottom: 2rem;
-}
-
-.bio-block p {
-    flex: 1;
-}
-
-.selfie {
-    width: 150px;
-    height: auto;
-    border: 1px solid var(--border-color);
-}
-
-/* --- Country Section --- */
-.country-block h4 {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.country-block hr {
-    border: 0;
-    border-top: 1px solid var(--border-color);
-    margin-bottom: 1.5rem;
-}
-
-.flag-container {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-}
-
-.flag-container figure {
-    text-align: center;
-    max-width: 160px;
-}
-
-.flag {
-    width: 100%;
-    height: auto;
-    border: 1px solid var(--border-color);
-}
-
-.flag-container figcaption {
-    font-size: 0.8rem;
-    font-style: italic;
-    color: #666;
-    margin-top: 0.5rem;
-}
-
-/* --- Resources (Right Card) --- */
-.resources-card ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-}
-
-.resources-card li {
-    margin-bottom: 0.75rem;
-}
-
-.resources-card a {
-    color: blue;
-    text-decoration: underline;
-}
-
-/* --- Footer --- */
-footer {
-    background-color: var(--blue);
-    color: var(--white);
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.95rem;
-}
-
-footer p {
-    margin-bottom: 0.5rem;
-}
-
-#lastModified {
-    color: var(--yellow-text);
-}
-
-/* --- Responsive View --- */
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-    .bio-block, .flag-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+<footer>
+    <p><span id="currentYear"></span> 🌈 Udie Stephen Udie 🌈 Cross River, Nigeria</p>
+    <p id="lastModified">Last Modification: 07/04/2026 3:52:42</p>
+</footer>
+    
+</body>
+</html>
