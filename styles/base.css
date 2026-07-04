@@ -1,4 +1,4 @@
-/* --- Root Variables & Setup --- */
+
 :root {
     --blue: rgb(29, 77, 114);
     --dark-grey: #333333;
@@ -19,7 +19,7 @@ body {
     background-color: #ffffff;
 }
 
-/* --- Header Section & Spacing --- */
+
 header {
     background-color: var(--blue);
     text-align: center;
@@ -27,7 +27,7 @@ header {
     padding-top: 1.5rem;
 }
 
-/* Formats the newly added required validator course span */
+
 #course-title {
     display: block;
     font-size: 1.5rem;
@@ -55,9 +55,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* --- Main Structure & Grid Integration --- */
+
 .user-title {
-    grid-column: 1 / -1; /* Forces the name title to span cleanly over both columns */
+    grid-column: 1 / -1; 
     text-align: center;
     font-size: 2.2rem;
     color: #111;
@@ -72,7 +72,7 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
-    align-items: stretch; /* Maintains perfectly matched card heights side-by-side */
+    align-items: stretch; /
 }
 
 /* --- Uniform Card Presentation --- */
@@ -94,7 +94,7 @@ main {
     font-weight: 500;
 }
 
-/* Styling inner nested headers cleanly */
+
 .card-content h3 {
     background: transparent;
     color: #000;
@@ -124,7 +124,7 @@ hr {
     flex: 1;
 }
 
-/* --- Internal Blocks & Component Floating --- */
+
 .bio-block {
     display: flex;
     
@@ -183,7 +183,7 @@ footer p {
     color: var(--yellow-text);
 }
 
-/* --- Adaptive Mobile Viewports --- */
+
 @media (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
