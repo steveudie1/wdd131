@@ -110,16 +110,6 @@ figcaption {font-size: smaller;}
 	width: 100%;
 	margin: 0;
 }
-/*		
-.pic {
-	background: #fff;
-	display: grid;
-	grid-template-columns: (3, 1fr);
-	grid-gap: 7px;
-	mix-blend-mode: lighten; /* try darken and overlay */
-	position: absolute;
-	top: 0;
-	width: 100%;
 
 }
 */
