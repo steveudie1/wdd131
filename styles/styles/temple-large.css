@@ -1,0 +1,44 @@
+/* Larger Views / Desktop Breakpoint */
+@media only screen and (min-width: 48em) {
+    body {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    #menu {
+        display: none; 
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; 
+    }
+
+    nav {
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation {
+        display: flex; 
+        flex-direction: row; 
+    }
+
+    .navigation a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+    }
+
+    .figcaption {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        grid-gap: 35px;
+    }
+}
