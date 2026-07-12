@@ -126,20 +126,29 @@ figcaption {
     background-color: #fff;
 }
 
-.hover:hover {
-    box-shadow: 0 0 15px #333;
+
+figure:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px); /* Optional: lifts the card up slightly */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* --- Footer --- */
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #4a148c;
-    color: #ffffff;
-    margin-top: 3rem;
-    font-size: 0.9rem;
-}
 
 footer p {
     margin: 0.25rem 0;
+}
+footer {
+    background-color: #4a148c; /* Dark purple matching your header */
+    color: #ffffff;            /* Crisp white text for contrast */
+    text-align: center;        /* Centers all paragraphs and text */
+    padding: 1.5rem 1rem;      /* Generous vertical spacing, safe horizontal spacing */
+    margin-top: 3rem;          /* Pushes footer down away from the grid gallery */
+    font-size: 0.9rem;         /* Slightly smaller font size for hierarchy */
+    border-top: 4px solid #320b61; /* Optional: subtle top border line for depth */
+}
+
+
+/* Style the current year or specific highlighted spans if needed */
+footer span#currentYear {
+    font-weight: bold;
 }
