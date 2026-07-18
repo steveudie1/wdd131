@@ -1,4 +1,4 @@
-/* --- Base Reset & Typography --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ h2 {
     font-weight: 500;
 }
 
-/* --- Header & Navigation Layout --- */
+
 header {
     background-color: #4a148c; 
     padding: 1rem 1.5rem;
@@ -35,7 +35,7 @@ h1 {
     font-weight: 500;
 }
 
-/* --- Hamburger Menu Icon --- */
+
 #menu {
     display: block;
     font-size: 2rem;
@@ -52,7 +52,7 @@ h1 {
     content: "✕"; 
 }
 
-/* --- Navigation Links --- */
+
 nav {
     background-color: #4a148c;
     width: 100%;
@@ -93,7 +93,7 @@ main {
     padding: 1.5rem;
 }
 
-/* Card Grid Layout */
+
 .figcaption {
     display: grid;
     grid-template-columns: 1fr; 
@@ -129,7 +129,7 @@ figcaption {
 
 figure:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    transform: translateY(-4px); /* Optional: lifts the card up slightly */
+    transform: translateY(-4px); /
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -138,17 +138,17 @@ footer p {
     margin: 0.25rem 0;
 }
 footer {
-    background-color: #4a148c; /* Dark purple matching your header */
-    color: #ffffff;            /* Crisp white text for contrast */
-    text-align: center;        /* Centers all paragraphs and text */
-    padding: 1.5rem 1rem;      /* Generous vertical spacing, safe horizontal spacing */
-    margin-top: 3rem;          /* Pushes footer down away from the grid gallery */
-    font-size: 0.9rem;         /* Slightly smaller font size for hierarchy */
-    border-top: 4px solid #320b61; /* Optional: subtle top border line for depth */
+    background-color: #4a148c; 
+    color: #ffffff;            
+    text-align: center;        
+    padding: 1.5rem 1rem;      
+    margin-top: 3rem;          
+    font-size: 0.9rem;         
+    border-top: 4px solid #320b61; 
 }
 
 
-/* Style the current year or specific highlighted spans if needed */
+
 footer span#currentYear {
     font-weight: bold;
 }
