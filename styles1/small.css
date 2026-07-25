@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+	/* background-color: blueviolet;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333; */
+
+    background-color: blueviolet;
+    padding: 20px;
+    width: 100%; /* Ensures the header fills the full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px #333;
+    position: relative;
+}
+
+.menu-icon {
+    display: none; /* Hide menu-icon by default */
+    color: #fff;
+    background-color: #fff;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.open::before {
+	content: "❎";
+}  
+nav {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    width: 100%; /* Full width for links */
+}
+
+.open a {
+	display: block;
+}
+
+
+h1 {
+	font-size: 2rem;
+    color: #eee;
+}
+
+nav a:hover {
+	text-decoration: underline double;
+}
+
+
+/* .img{
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+} */
+
+.img {
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    grid-template-columns:3, 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.figcaption{
+	padding: 2rem;
+}
+
+   
+
+.hamburger {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+     /* Position the icon absolutely */
+    top: 10px; /* Adjust this value to place it closer/farther from the top */
+    right: 40px; /* Adjust this value to place it closer/farther from the right */
+    /* z-index: 1000; */
+}
+h2{
+    text-align: center;
+}
+
+.navigation {
+    display: none; /* Hide navigation links by default */
+}
+
+.navigation.open {
+    display: flex; /* Show navigation links when 'open' class is added */
+    flex-direction: column;
+}
+
+footer{
+    background: var(--primary-color);
+    text-align: center;
+    color: #eee;
+    padding: 2px;
+    background-color: blueviolet;
+}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sansita", sans-serif;
+}
+
+/* mobile **************************/
+header, {
+    text-align: right;
+	background-color: #bbb;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1,h2 {
+	font-size: 2rem;
+}
+
+.stdlf {display: center;
+    display: grid;
+    text-align: right;
+    align-content: right;
+    align-self: center;
+}
+nav {
+	background-color: #36454f;
+	display: flex;
+	flex-direction: row;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #000;
+}
+
+.active {
+	color: yellow;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}

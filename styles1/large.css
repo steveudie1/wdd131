@@ -1,0 +1,102 @@
+body {
+	font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+	text-align: center;
+	background-color:blueviolet;
+	padding: 1rem;
+  }
+  
+  
+  nav {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+  }
+  
+  .temple-cards-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr));
+	gap: 1rem;
+	padding: 2rem;
+  }
+  
+  .temple-card {
+	border: 1px solid #ccc;
+	padding: 1rem;
+	text-align: center;
+	background-color: #f9f9f9;
+  }
+  
+  .temple-card img {
+	width: 100%;
+	height: auto;
+  }
+  
+  footer {
+	text-align: center;
+	margin-top: 2rem;
+  }
+  
+/* Larger Screens (Desktop) */
+@media (min-width: 768px) {
+
+    body {
+        max-width: max-content;
+        margin: 0 auto;
+    }
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+		    grid-auto-flow: column;
+
+    }
+
+    nav {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 auto;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+	
+    .navigation {
+    display: flex;
+		gap: 1rem; /* Space between nav items */
+        /* flex-direction: row; */
+		
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /* Responsive Image Gallery */
+    .img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)); /* Card view for larger screens */
+        gap: 2rem;
+        padding: 2rem;
+        justify-items: center; /* Center the cards on larger screens */
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .figcaption {
+        padding: 1rem;
+        text-align: center;
+    }
+}
