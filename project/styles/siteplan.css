@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    /* Palette Colors */
+    --primary-color: #258ea6;
+    --secondary-color: #4497a1;
+    --accent1-color: #629f9b;
+    --accent2-color: #9faf90;
+    --dark-text: #2c3e50;
+    --light-bg: #f8f9fa;
+
+    /* Fonts */
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+}
+
+/* Base resets & typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em 1.5em;
+    font-family: var(--paragraph-font);
+    color: var(--dark-text);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin-top: 1em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p, li {
+    margin-bottom: 0.8em;
+}
+
+ul {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+hr {
+    height: 2px;
+    margin: 2.5em 0;
+    border: none;
+    background-color: var(--accent1-color);
+}
+
+/* Header & Footer */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0 1em;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Scenarios */
+.scenario {
+    background: white;
+    padding: 1.2em;
+    border-left: 4px solid var(--secondary-color);
+    margin-bottom: 1em;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Color Palette Table */
+.colors {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.colors th, .colors td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.colors th {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--heading-font);
+}
+
+.colors td:first-child {
+    width: 60px;
+}
+
+.primary { background-color: var(--primary-color); }
+.secondary { background-color: var(--secondary-color); }
+.accent1 { background-color: var(--accent1-color); }
+.accent2 { background-color: var(--accent2-color); }
+
+/* Typography Section */
+.font-demo {
+    background: white;
+    padding: 1.2em;
+    margin-bottom: 1em;
+    border-radius: 6px;
+}
+
+.font-sample-heading {
+    font-family: var(--heading-font);
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.font-sample-body {
+    font-family: var(--paragraph-font);
+    font-size: 1.1em;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
