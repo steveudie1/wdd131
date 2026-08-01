@@ -29,7 +29,7 @@ body {
     gap: 15px;
 }
 
-/* Header Styling */
+
 header {
     background-color: var(--dark-purple);
     color: #ffffff;
@@ -40,7 +40,7 @@ header {
     border-radius: 2px;
 }
 
-/* Form Card Styling */
+
 form {
     background-color: var(--form-bg);
     padding: 16px;
@@ -76,7 +76,7 @@ label {
     font-weight: normal;
 }
 
-/* Input Controls */
+
 select, 
 input[type="date"], 
 input[type="text"], 
@@ -95,7 +95,7 @@ textarea {
     resize: vertical;
 }
 
-/* Overall Rating Layout */
+
 .rating-group {
     display: flex;
     justify-content: space-between;
@@ -123,7 +123,7 @@ textarea {
     cursor: pointer;
 }
 
-/* Checkbox Group Layout */
+
 .checkbox-group {
     display: flex;
     flex-direction: column;
@@ -151,7 +151,6 @@ textarea {
     font-size: 0.8rem;
 }
 
-/* Submit Button */
 .submit-btn {
     background-color: #efefef;
     color: #000;
@@ -168,7 +167,7 @@ textarea {
     background-color: #e0e0e0;
 }
 
-/* Footer Styling */
+
 footer {
     background-color: var(--dark-purple);
     color: #ffffff;
@@ -179,7 +178,7 @@ footer {
     border-radius: 2px;
 }
 
-/* Required Media Query for Responsiveness */
+
 @media screen and (min-width: 600px) {
     .container {
         max-width: 500px;
