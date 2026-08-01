@@ -8,9 +8,7 @@ const products = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    // -------------------------------------------------------------
-    // 1. FORM PAGE LOGIC (form.html)
-    // -------------------------------------------------------------
+    
     const productSelect = document.getElementById("product-select");
 
     if (productSelect) {
@@ -22,24 +20,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // -------------------------------------------------------------
-    // 2. CONFIRMATION PAGE LOGIC (review.html)
-    // -------------------------------------------------------------
+    
     const countDisplay = document.getElementById("reviewCount");
 
     if (countDisplay) {
         const storageKey = "numReviewsCompleted";
         
-        // Retrieve count from localStorage or default to 0
+        
         let reviewCount = Number(localStorage.getItem(storageKey)) || 0;
         
-        // Increment by 1 on landing
+        
         reviewCount++;
         
-        // Save back to localStorage
+        
         localStorage.setItem(storageKey, reviewCount);
         
-        // Display updated count in HTML
+        
         countDisplay.textContent = reviewCount;
     }
 
