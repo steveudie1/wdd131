@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopEaseHub - Browse top deals and seasonal discounts.">
+    <title>ShopEaseHub | Deals & Discounts</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">ShopEaseHub</div>
+            <input type="search" class="search-bar" placeholder="Search product..." aria-label="Search products">
+            <div class="user-actions">
+                <a href="#" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+                <a href="#">Account</a>
+                <button id="menu" aria-label="Toggle Navigation Menu"></button>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Deals & Discounts</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contact.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-container">
+            <h2>Today's Hot Deals & Discounts</h2>
+            <p style="text-align: center; margin-bottom: 1.5rem; color: #555;">Grab our top-rated products at unbeatable prices for a limited time.</p>
+            
+            <!-- JavaScript will inject products here automatically -->
+            <div id="product-grid" class="grid-4-col"></div> 
+        </section>
+    </main>
+
+    <footer>
+        <p> <span id="currentYear"></span> ShopEaseHub | Stephen Udie | WDD 131</p>
+        <p><span id="lastModified"></span></p>
+        
+    </footer>
+</body>
+</html>
