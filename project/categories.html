@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopEaseHub - Explore product categories including electronics, fashion, and more.">
+    <title>ShopEaseHub | Categories</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="logo">ShopEaseHub</div>
+            <input type="search" class="search-bar" placeholder="Search product..." aria-label="Search products">
+            <div class="user-actions">
+                <a href="#" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+                <a href="#">Account</a>
+                <button id="menu" aria-label="Toggle Navigation Menu"></button>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Deals & Discounts</a></li>
+                <li><a href="categories.html" class="active">Categories</a></li>
+                <li><a href="contact.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-container">
+            <h2>Explore Shop Categories</h2>
+            <div class="grid-4-col">
+                <a href="products.html" class="card category-card" style="text-align: center; padding: 2.5rem 2rem; background: #f4cccc; text-decoration: none; color: #333; font-weight: 600; border-radius: 6px; transition: transform 0.2s;">
+                    Electronics
+                </a>
+                <a href="products.html" class="card category-card" style="text-align: center; padding: 2.5rem 2rem; background: #f4cccc; text-decoration: none; color: #333; font-weight: 600; border-radius: 6px; transition: transform 0.2s;">
+                    Fashion
+                </a>
+                <a href="products.html" class="card category-card" style="text-align: center; padding: 2.5rem 2rem; background: #f4cccc; text-decoration: none; color: #333; font-weight: 600; border-radius: 6px; transition: transform 0.2s;">
+                    Home & Kitchen
+                </a>
+                <a href="eco.html" class="card category-card" style="text-align: center; padding: 2.5rem 2rem; background: #f4cccc; text-decoration: none; color: #333; font-weight: 600; border-radius: 6px; transition: transform 0.2s;">
+                    Eco-friendly
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> <span id="currentYear"></span> ShopEaseHub | Stephen Udie | WDD 131</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

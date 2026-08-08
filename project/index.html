@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopEaseHub - Your ultimate dynamic and eco-conscious e-commerce destination.">
+    <title>ShopEaseHub | Home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet & Script -->
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+   
+    <header>
+        <div class="top-bar">
+            <div class="logo">ShopEaseHub</div>
+            <input type="search" class="search-bar" placeholder="Search product..." aria-label="Search products">
+            <div class="user-actions">
+                <a href="#" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</a>
+                <a href="#">Account</a>
+                <button id="menu" aria-label="Toggle Navigation Menu"></button>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Deals & Discounts</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contact.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <main>
+        
+        <section class="hero-banner">
+            <div class="hero-text">
+                <h2>Shop Smart. Save Easy</h2>
+                <p>Explore daily discounts across top categories.</p>
+                <a href="products.html" class="btn-primary">SHOP DEALS NOW</a>
+            </div>
+            <div class="hero-image">
+                <img src="./images/promo.jpg" alt="Featured seasonal deal banner" loading="lazy">
+            </div>
+        </section>
+
+        
+        <section class="catalog-container">
+            <h2>Shop Categories</h2>
+            <div class="grid-4-col">
+                <div class="card category-card">Electronics</div>
+                <div class="card category-card">Fashion</div>
+                <div class="card category-card">Home & Kitchen</div>
+                <div class="card category-card">Eco-friendly</div>
+            </div>
+        </section>
+
+        
+        <section class="catalog-container">
+            <h2>Featured Products</h2>
+            <div id="product-grid" class="grid-4-col"></div>
+        </section>
+
+        
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-cards">
+                <div class="card feature-card">🚚 Free Shipping</div>
+                <div class="card feature-card">🔒 Safe Payment</div>
+                <div class="card feature-card">🎧 24/7 Support</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p> <span id="currentYear"></span> ShopEaseHub | Stephen Udie | WDD 131</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
